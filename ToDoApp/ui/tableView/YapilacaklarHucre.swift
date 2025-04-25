@@ -8,7 +8,12 @@
 import UIKit
 
 class YapilacaklarHucre: UITableViewCell {
-
+    
+   
+    @IBOutlet weak var yapilacakAd: UILabel!
+    
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -17,35 +17,39 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="mF4-2p-qVq">
-                                <rect key="frame" x="0.0" y="214" width="393" height="56"/>
+                                <rect key="frame" x="0.0" y="219.66666666666666" width="393" height="55.999999999999972"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Etb-Jf-Qov"/>
                                 </connections>
                             </searchBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="U5g-Yt-6bE">
-                                <rect key="frame" x="0.0" y="270" width="393" height="465"/>
+                                <rect key="frame" x="0.0" y="275.66666666666674" width="393" height="459.33333333333326"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="YapilacaklarHucre" id="4lE-Gj-TO7">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="yapilacaklarHucre" id="4lE-Gj-TO7" customClass="YapilacaklarHucre" customModule="ToDoApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4lE-Gj-TO7" id="uxO-uc-q62" customClass="YapilacaklarHucre" customModule="ToDoApp" customModuleProvider="target">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6n-F4-9OS">
-                                                    <rect key="frame" x="28" y="19" width="42" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6n-F4-9OS">
+                                                    <rect key="frame" x="28" y="30" width="337" height="38"/>
+                                                    <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="30"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="x6n-F4-9OS" firstAttribute="centerX" secondItem="uxO-uc-q62" secondAttribute="centerX" id="0Is-tp-Pdx"/>
                                                 <constraint firstItem="x6n-F4-9OS" firstAttribute="leading" secondItem="uxO-uc-q62" secondAttribute="leadingMargin" constant="8" id="Joa-qn-O3V"/>
-                                                <constraint firstItem="x6n-F4-9OS" firstAttribute="top" secondItem="uxO-uc-q62" secondAttribute="topMargin" constant="8" id="p47-U2-8Nc"/>
+                                                <constraint firstItem="x6n-F4-9OS" firstAttribute="top" secondItem="uxO-uc-q62" secondAttribute="topMargin" constant="19" id="p47-U2-8Nc"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="yapilacakAd" destination="x6n-F4-9OS" id="uoB-bK-QGf"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -89,27 +93,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Yapılacak" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MS7-x6-Rpf">
-                                <rect key="frame" x="111" y="251.66666666666666" width="171" height="51.666666666666657"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MS7-x6-Rpf">
+                                <rect key="frame" x="32" y="251.66666666666666" width="329" height="51.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="09a-fJ-9Es">
                                 <rect key="frame" x="151.33333333333334" y="359.33333333333331" width="90.666666666666657" height="34.333333333333314"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="Güncelle"/>
+                                <connections>
+                                    <action selector="buttonGuncelle:" destination="sFj-yt-ZZJ" eventType="touchUpInside" id="NiR-Fc-oRc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="bns-8J-cAA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="bns-8J-cAA" firstAttribute="trailing" secondItem="MS7-x6-Rpf" secondAttribute="trailing" constant="32" id="2bc-i7-fFk"/>
+                            <constraint firstItem="MS7-x6-Rpf" firstAttribute="leading" secondItem="bns-8J-cAA" secondAttribute="leading" constant="32" id="5x8-GI-HoO"/>
                             <constraint firstItem="MS7-x6-Rpf" firstAttribute="top" secondItem="bns-8J-cAA" secondAttribute="top" constant="32" id="JUY-fZ-nfB"/>
                             <constraint firstItem="MS7-x6-Rpf" firstAttribute="centerX" secondItem="zux-9b-YVh" secondAttribute="centerX" id="Ugu-4m-Plk"/>
                             <constraint firstItem="09a-fJ-9Es" firstAttribute="top" secondItem="MS7-x6-Rpf" secondAttribute="bottom" constant="56" id="qpY-wc-3Dy"/>
                             <constraint firstItem="09a-fJ-9Es" firstAttribute="centerX" secondItem="zux-9b-YVh" secondAttribute="centerX" id="x64-AR-85S"/>
-                            <constraint firstItem="09a-fJ-9Es" firstAttribute="top" secondItem="MS7-x6-Rpf" secondAttribute="bottom" constant="56" id="yVp-Ay-XcC"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Yapılacak Güncelle" id="TLD-Cf-II9"/>
+                    <connections>
+                        <outlet property="tfYapilacakAd" destination="MS7-x6-Rpf" id="3ht-38-6SH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B4F-ch-Zs8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -123,8 +134,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Yapılacak" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AuR-rE-QxC">
-                                <rect key="frame" x="111" y="283.66666666666669" width="171" height="51.666666666666686"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AuR-rE-QxC">
+                                <rect key="frame" x="32" y="283.66666666666669" width="329" height="51.666666666666686"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="35"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -140,9 +151,11 @@
                         <viewLayoutGuide key="safeArea" id="iyc-3D-pA3"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="AuR-rE-QxC" firstAttribute="leading" secondItem="iyc-3D-pA3" secondAttribute="leading" constant="32" id="6Qy-mK-BOS"/>
                             <constraint firstItem="AuR-rE-QxC" firstAttribute="top" secondItem="iyc-3D-pA3" secondAttribute="top" constant="64" id="7Tw-Sk-hsj"/>
                             <constraint firstItem="AuR-rE-QxC" firstAttribute="centerX" secondItem="lN4-My-SP6" secondAttribute="centerX" id="Sm3-rU-Eh5"/>
                             <constraint firstItem="0T7-Fb-FoI" firstAttribute="centerX" secondItem="lN4-My-SP6" secondAttribute="centerX" id="Vk4-HB-ukN"/>
+                            <constraint firstItem="iyc-3D-pA3" firstAttribute="trailing" secondItem="AuR-rE-QxC" secondAttribute="trailing" constant="32" id="aav-n5-tSm"/>
                             <constraint firstItem="0T7-Fb-FoI" firstAttribute="top" secondItem="AuR-rE-QxC" secondAttribute="bottom" constant="56" id="lDO-N0-Z2d"/>
                         </constraints>
                     </view>

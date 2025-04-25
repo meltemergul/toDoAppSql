@@ -8,26 +8,23 @@
 import UIKit
 
 class YapilacaklarKayit: UIViewController {
-
+    
     @IBOutlet weak var tfYapilacak: UITextField!
+    
+    var yapilacakKayitViewModel = YapilacakKayitViewModel()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
     
     @IBAction func buttonEkle(_ sender: Any) {
         if let ad = tfYapilacak.text {
-//            kaydet(yapilacak:ad)
+            yapilacakKayitViewModel.kaydet(ad:ad)
         }
     }
     
-    func kaydet(ad:String)
-    {
-    print("Kaydet: \(ad)")
-    }
  
+    
 }
-
-
